@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Amit App | Home Page
+{% endblock %}
+{% block content %}
+<h1>Amit First App | Home Page</h1>
+
+
+{% for amit in amits  %}
+<div class="amit-item">
+<img src="{{amit.image.url}}" alt="">
+<h3>{{amit.name}}</h3>
+</div>
+{% endfor %}
+{% endblock %}
